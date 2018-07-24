@@ -892,6 +892,9 @@ class DeformableMirror(Device):
         self._pattern_idx += 1
         self.apply_pattern(self._patterns[self._pattern_idx,:])
 
+    def get_pattern_index(self):
+        return self._pattern_idx
+
     def initialize(self):
         pass
     def _on_shutdown(self):
