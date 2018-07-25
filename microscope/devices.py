@@ -841,6 +841,9 @@ class DeformableMirror(Device):
     @property
     def n_actuators(self):
         return self._n_actuators
+    
+    def get_pattern_index(self):
+        return self._patterns_idx
 
     def _validate_patterns(self, patterns):
         """Validate the shape of a series of patterns.
